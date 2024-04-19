@@ -11,7 +11,7 @@ echo $COMPILER_VERSION
 echo ""
 
 cd src/uvc
-make -C /lib/modules/$(uname -r)/build M=$(pwd) CC=$COMPILER_VERSION
+make -C /lib/modules/$(uname -r)/build M=$(pwd)
 
 if [ -e uvcvideo.ko ]
 then
